@@ -84,6 +84,10 @@
  */
 @property (nonatomic, readonly) RKManagedObjectStore *objectStore;
 
+/* Change made by kartjuba*/
+@property (nonatomic, copy) id (^findObjectWithMappableDataBlock)(id mappableData);
+
+
 /**
  Instructs RestKit to automatically connect a relationship of the object being mapped by looking up
  the related object by primary key.

@@ -35,6 +35,7 @@
 @synthesize entity = _entity;
 @synthesize primaryKeyAttribute = _primaryKeyAttribute;
 @synthesize objectStore = _objectStore;
+@synthesize findObjectWithMappableDataBlock = _findObjectWithMappableDataBlock;
 
 + (id)mappingForClass:(Class)objectClass {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
@@ -88,6 +89,7 @@
 
     [_entity release];
     [_relationshipToPrimaryKeyMappings release];
+    [_findObjectWithMappableDataBlock release];
     [super dealloc];
 }
 
@@ -177,6 +179,20 @@
             [self.objectStore.cacheStrategy didFetchObject:object];
         }
     }
+    /* Change made by kartjuba */
+    if (!object)
+        if(self.findObjectWithMappableDataBlock) {
+        // delegate the find option by attribute different than primaryKey
+        // mainly entity join finds
+        object = self.findObjectWithMappableDataBlock(mappableData);
+
+        if (object && primaryKeyAttribute && primaryKeyValue && ![primaryKeyValue isEqual:[NSNull null]]) {
+
+            id coercedPrimaryKeyValue = [entity coerceValueForPrimaryKey:primaryKeyValue];
+            [object setValue:coercedPrimaryKeyValue forKey:primaryKeyAttribute];
+        }        
+    }
+    /*End of change made by kartjuba*/
 
     if (object == nil) {
         object = [[[NSManagedObject alloc] initWithEntity:entity
