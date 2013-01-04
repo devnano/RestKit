@@ -21,6 +21,7 @@
 #import "RKObjectMapping.h"
 #import "RKObjectAttributeMapping.h"
 
+
 @class RKObjectMappingOperation;
 @class RKMappingOperationQueue;
 

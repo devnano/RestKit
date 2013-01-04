@@ -34,3 +34,4 @@
 #import "NSArray+RKAdditions.h"
 #import "NSData+RKAdditions.h"
 #import "NSURL+RKAdditions.h"
+#import "NSSet+KartjubaDuplicatesFilter.h"

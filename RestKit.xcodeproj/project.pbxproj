@@ -742,6 +742,10 @@
 		73D3907714CA1AE60093E3D6 /* child.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D3907314CA1A4A0093E3D6 /* child.json */; };
 		73D3907914CA1DD40093E3D6 /* channels.xml in Resources */ = {isa = PBXBuildFile; fileRef = 73D3907814CA1D710093E3D6 /* channels.xml */; };
 		73D3907A14CA1DD50093E3D6 /* channels.xml in Resources */ = {isa = PBXBuildFile; fileRef = 73D3907814CA1D710093E3D6 /* channels.xml */; };
+		FFF8677E169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFF8677C169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFF8677F169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFF8677C169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFF86780169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8677D169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m */; };
+		FFF86781169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8677D169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1228,6 +1232,8 @@
 		73DA8E1B14D1BA960054DD73 /* RKObjectMappingProvider+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKObjectMappingProvider+CoreData.m"; sourceTree = "<group>"; };
 		73DA8E2014D1C3870054DD73 /* RKObjectMappingProviderContextEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingProviderContextEntry.h; sourceTree = "<group>"; };
 		73DA8E2114D1C3870054DD73 /* RKObjectMappingProviderContextEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingProviderContextEntry.m; sourceTree = "<group>"; };
+		FFF8677C169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+KartjubaDuplicatesFilter.h"; sourceTree = "<group>"; };
+		FFF8677D169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+KartjubaDuplicatesFilter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1555,6 +1561,8 @@
 				252A202C153471380078F8AD /* NSArray+RKAdditions.m */,
 				2572538B155C543000CB05ED /* RKPortCheck.h */,
 				2572538C155C543000CB05ED /* RKPortCheck.m */,
+				FFF8677C169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h */,
+				FFF8677D169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -2273,6 +2281,7 @@
 				259D985E155218E5008C90F5 /* RKEntityCache.h in Headers */,
 				25545959155F0527007D7625 /* RKBenchmark.h in Headers */,
 				25E4DAB4156DA97F00A5C84B /* RKTableControllerTestDelegate.h in Headers */,
+				FFF8677E169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2398,6 +2407,7 @@
 				259D985F155218E5008C90F5 /* RKEntityCache.h in Headers */,
 				2554595A155F0527007D7625 /* RKBenchmark.h in Headers */,
 				25E4DAB5156DA97F00A5C84B /* RKTableControllerTestDelegate.h in Headers */,
+				FFF8677F169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2807,6 +2817,7 @@
 				259D9860155218E5008C90F5 /* RKEntityCache.m in Sources */,
 				2554595B155F0527007D7625 /* RKBenchmark.m in Sources */,
 				25E4DAB6156DA97F00A5C84B /* RKTableControllerTestDelegate.m in Sources */,
+				FFF86780169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2997,6 +3008,7 @@
 				259D9861155218E5008C90F5 /* RKEntityCache.m in Sources */,
 				2554595C155F0527007D7625 /* RKBenchmark.m in Sources */,
 				25E4DAB7156DA97F00A5C84B /* RKTableControllerTestDelegate.m in Sources */,
+				FFF86781169724F9008F7399 /* NSSet+KartjubaDuplicatesFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
